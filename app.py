@@ -151,7 +151,7 @@ def show_movie_details(movie_id):
 
         st.image(
             poster,
-            use_container_width=True
+            width=300
         )
 
     with col2:
