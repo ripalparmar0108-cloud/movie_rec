@@ -29,7 +29,7 @@ movies = pd.DataFrame(movies_dict)
 
 
 with open("similarity.pkl", "rb") as f:
-    data = pickle.load(f)
+    similarity = pickle.load(f)
 
 # ---------------------------------------------------
 # SESSION STATE
