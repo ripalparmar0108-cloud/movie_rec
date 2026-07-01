@@ -43,17 +43,6 @@ There are many columns. Only important ones will be discussed here.
 
 7. **Crew:** JSON format, Contained the names, job and designation of each and every crew member.
 
-### Data Snapshot
-
-Let’s look at the data. Movies Dataset:
-![img.png](img.png)
-
-**Credits Dataset:**
-![img_3.png](img_3.png)
-
-
-**After merging our dataset looked like this:**
-![img_5.png](img_5.png)
 
 ### Count Vectorizer
 Machine learning models don’t understand human words, but they know vectors!
@@ -61,4 +50,6 @@ Machine learning models don’t understand human words, but they know vectors!
 We'll be count-vectorizing the combined column to covert the textual data to numeric data so that we can process it further.
 
 ### Model Deployment
+Link--->[Movie_Recommantion_system](https://movierecommendationsystem-fbp7kptzxrglpdycfjuype.streamlit.app/)
+
 Deployed the model on local server with the help of Streamlit Library. I must say, it was very efficient to use. Then for finally publishing it online, I took the help of Streamlit.
