@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import os
 
 # ---------------------------------------------------
 # PAGE CONFIG
@@ -17,13 +18,15 @@ API_KEY = "94ff7ab39fef18638eb9b2b3997cf2e3"
 # ---------------------------------------------------
 # LOAD DATA
 # ---------------------------------------------------
-movies_dict = pickle.load(
-    open("movies_dict.pkl", "rb")
-)
+print("movies_dict.pkl exists:", os.path.exists("movies_dict.pkl"))
+print("movies_dict.pkl size:", os.path.getsize("movies_dict.pkl"))
 
-movies = pd.DataFrame(
-    movies_dict
-)
+with open("movies_dict.pkl", "rb") as f:
+    movies_dict = pickle.load(f)
+
+
+movies = pd.DataFrame(movies_dict)
+
 
 similarity = pickle.load(
     open("similarity.pkl", "rb")
